@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>California House Price Predictor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body">
+    <div>
+      <header>
+        <h1 id="titleText">California House Price Predictor</h1>
+      </header>
+    </div>
+    <div>
+        <ul class="topnav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul> 
+    </div>
+    <div class = "aboutSection">
+        <h3 style="margin-top: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 20px;
+    color: rgb(254, 254, 210);">About Us </h3>
+            <p>We are passionate about turning data into meaningful insights through Machine Learning. This project is built with the goal of understanding real-world data, applying effective preprocessing techniques, and evaluating multiple machine learning models to achieve accurate and reliable predictions.
+
+Rather than focusing on just a single algorithm, this project explores and compares different models to understand their strengths, limitations, and performance under various conditions. Feature engineering, data transformation, and model evaluation play a key role in ensuring that the predictions are not only accurate but also interpretable.
+
+This application represents a complete end-to-end machine learning workflow — from raw data analysis to model training and final deployment. The frontend is designed to provide a simple and intuitive interface, allowing users to interact with the model and understand the results easily.
+
+Our aim is to build practical, scalable, and transparent machine learning solutions while continuously learning and improving through experimentation and real-world implementation.</p>
+        
+    </div>
+
+    <forms id="inputForm">
+        <h2 align="center" style="color: white">Enter the details below to predict house price:</h2>
+      <!-- independent features: longitude, latitude, housing_median_age, median_income, rooms_per_household_log, population_per_household_log, bedrooms_per_household_capped_log, ocean_proximity 
+       dependent features: predicted_house_price-->
+      <table align="center">
+        <th>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+        </th>
+        <tr>
+          <td>Longitude:</td>
+          <td></td>
+          <td><input type="text" id="longitude" name="longitude" required /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Latitude:</td>
+          <td></td>
+          <td><input type="text" id="latitude" name="latitude" required  /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>House Age:</td>
+          <td></td>
+          <td>
+            <input
+              type="text"
+              id="housing_median_age"
+              name="housing_median_age"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Median Income:</td>
+          <td></td>
+          <td><input type="text" id="median_income" name="median_income" required /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Enter number of rooms required:</td>
+          <td></td>
+          <td><input type="text" id="rooms" name="rooms" required /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Desired population of neighborhood:</td>
+          <td></td>
+          <td><input type="text" id="population" name="population" required /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Enter number of Bedrooms required:</td>
+          <td></td>
+          <td><input type="text" id="bedrooms" name="bedrooms" required /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Proximity to ocean:</td>
+          <td></td>
+          <td>
+            <select id="ocean_proximity" name="ocean_proximity">
+              <option value="">--Select--</option>
+              <option value="NEAR BAY">NEAR BAY</option>
+              <option value="INLAND">INLAND</option>
+              <option value="NEAR OCEAN">NEAR OCEAN</option>
+              <option value="ISLAND">ISLAND</option>
+              <option value="<1H OCEAN"><1H OCEAN</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Enter number of households</td>
+          <td></td>
+          <td><input type="text" id="households" name="households" required /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="5" align="center">
+            <button type="submit" id="predictButton">
+              Predict House Price
+            </button>
+          </td>
+        </tr>
+      </table>
+    </forms>
+    <div>
+    <footer>
+        <p>For further information, Contact Us.</p>
+        <p>Owner: Ishita Singh</p>
+        <p>Email: @singhishita7784@gmail.com</p>
+        <p>Phone: +91 9876543210</p>
+        
+    </footer></div>
+  </body>
+</html>
