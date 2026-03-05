@@ -13,15 +13,17 @@ california-house-price-predictor/
 ├── backend/
 │   ├── main.py                  # FastAPI app with all endpoints
 │   ├── user_input.py            # Pydantic input validation model
-│   ├── model_improved_2.pkl     # Trained Random Forest model
-│   ├── requirements.txt         # Python dependencies
-│   └── Dockerfile               # For Hugging Face deployment
+│   ├── ml_model.ipynb           # Trained Random Forest model (colab notebook)
+│
+└── dataset/
+|    ├── processed_california_housing_dataset.csv 
 │
 └── frontend/
     ├── index.html               # Main HTML page
     ├── styles.css               # Styling
     ├── app.js                   # API calls and frontend logic
     └── image3.jpg               # Background image
+
 ```
 
 ---
